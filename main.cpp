@@ -50,7 +50,7 @@ int main()
     HANDLE h_process = OpenProcess(PROCESS_ALL_ACCESS, NULL, proc_id);
     if (!h_process)
     {
-        error("OpenProcess", "fail to open a handle to process piska")
+        error("OpenProcess", "fail to open a handle to process")
     }
 
     void* allocated_memory = VirtualAllocEx(h_process, nullptr, MAX_PATH, MEM_COMMIT, PAGE_READWRITE);
